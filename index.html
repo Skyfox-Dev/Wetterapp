@@ -1,0 +1,52 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Wetter</title>
+    </head>
+    <body style = "background-image: linear-gradient(rgb(38, 94, 179), rgb(133, 178, 189)); background-size: cover">
+        <script>
+        </script>
+            <header>Skyfox Wetterapp</header>
+            <div class="uppercontent">
+                <form class="searchbar">
+                    <input type="text" placeholder="Gebe eine Stadt ein" onkeypress="return handleKeyPress(event)">
+                    <button type="button" onclick="getResponse()">Suchen</button>
+                </form>
+                <stadttitel><span id="Stadtname"></span></stadttitel>
+            </div>
+            <div class ="allgemeinbar hidden">
+                Allgemein
+            </div>
+            <div class="allgemein hidden">
+                <wetterbild></wetterbild>
+                <conditiontext><span id="condition"></span></conditiontext>
+                <datum><span id="Datum"></span></datum>
+                <temperatur><span id ="tempC"></span></temperatur>
+                <feelslike><span id = "feelslike"></span></feelslike>
+                <feuchtigkeit><span id = "humidity"></span></feuchtigkeit>
+                <wind><span id = "wind"></span></wind>
+            </div>
+            <div class ="dreitagebar hidden">
+                3 Tages-Vorhersage
+            </div>
+            <div class ="dreitage hidden">
+                <div class = "block1">
+                    <block1tag><span id="wochentag1"></span></block1tag>
+                    <tagesicon1></tagesicon1>
+                    <temp1></temp1>
+                </div>
+                <div class = "block2">
+                    <block2tag><span id="wochentag2"></span></block2tag>
+                    <tagesicon2></tagesicon2>
+                    <temp2></temp2>
+                </div>
+                <div class = "block3">
+                    <block3tag><span id="wochentag3"></span></block3tag>
+                    <tagesicon3></tagesicon3>
+                    <temp3></temp3>
+                </div>
+            </div>
+    </body>
+</html>
